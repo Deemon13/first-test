@@ -1,0 +1,19 @@
+.section {
+  padding: 94px 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  font-size: inherit;
+  text-decoration: none;
+  color: var(--main-color-dark);
+}

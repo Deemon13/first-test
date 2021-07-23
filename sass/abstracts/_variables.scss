@@ -1,0 +1,18 @@
+:root {
+  --main-color-dark: #212121;
+  --main-color-light: #ffffff;
+  --secondary-color-dark: #000000;
+  --secondary-color-light: #757575;
+  --secondary-color-light-transp: rgba(255, 255, 255, 0.6);
+  --background-color-dark: #2f303a;
+  --background-color-light: #f5f4fa;
+  --accent-color: #2196f3;
+  --accent-color-hover: #188ce8;
+
+  --main-text-size: 14px;
+  --secondary-text-size: 16px;
+  --main-text-letter-spacing: 0.03em;
+
+  --main-transition-duration: 250ms;
+  --main-transition-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
