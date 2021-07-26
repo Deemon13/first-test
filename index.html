@@ -29,6 +29,7 @@
     <!-- MAIN -->
 
     <!-- HERO -->
+    <button type="button" data-modal-open>Модалка</button>
 
     <!-- FEATURES -->
 
@@ -44,8 +45,7 @@
             </div>
             <h3 class="features__title">Внимание к деталям</h3>
             <p class="features__text">
-              Идейные соображения, а также начало повседневной работы по
-              формированию позиции.
+              Идейные соображения, а также начало повседневной работы по формированию позиции.
             </p>
           </li>
           <li class="features__item">
@@ -56,8 +56,7 @@
             </div>
             <h3 class="features__title">Пунктуальность</h3>
             <p class="features__text">
-              Задача организации, в особенности же рамки и место обучения кадров
-              влечет за собой.
+              Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
             </p>
           </li>
           <li class="features__item">
@@ -68,8 +67,7 @@
             </div>
             <h3 class="features__title">Планирование</h3>
             <p class="features__text">
-              Равным образом консультация с широким активом в значительной
-              степени обуславливает.
+              Равным образом консультация с широким активом в значительной степени обуславливает.
             </p>
           </li>
           <li class="features__item">
@@ -80,8 +78,7 @@
             </div>
             <h3 class="features__title">Современные технологии</h3>
             <p class="features__text">
-              Значимость этих проблем настолько очевидна, что реализация
-              плановых заданий.
+              Значимость этих проблем настолько очевидна, что реализация плановых заданий.
             </p>
           </li>
         </ul>
@@ -213,14 +210,10 @@
 
             <ul class="list">
               <li class="footer-list">
-                <a class="footer-address link" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
+                <a class="footer-address link" href="mailto:info@example.com">info@example.com</a>
               </li>
               <li class="footer-list">
-                <a class="footer-address link" href="tel:+380991111111"
-                  >+38 099 111 11 11</a
-                >
+                <a class="footer-address link" href="tel:+380991111111">+38 099 111 11 11</a>
               </li>
             </ul>
           </address>
@@ -261,12 +254,7 @@
         <div class="footer-newsletter">
           <p class="newsletter-title">Подпишитесь на рассылку</p>
           <form class="newsletter-form">
-            <input
-              class="newsletter-input"
-              type="email"
-              name="user-name"
-              placeholder="E-mail"
-            />
+            <input class="newsletter-input" type="email" name="user-name" placeholder="E-mail" />
             <button type="submit" class="component-btn newsletter-btn">
               Подписаться
               <svg class="newsletter-btn-icon" width="24" height="24">
@@ -278,5 +266,109 @@
       </div>
     </footer>
     <!--END FOOTER -->
+
+    <!-- MODAL -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__closer" type="button" data-modal-close>
+          <svg class="modal__icon" width="11" height="11">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <form name="purchase_form" autocomplete="on" class="form">
+          <div class="form__group" role="group" aria-labelledby="contacts-details">
+            <p id="contacts-details" class="form__text">Оставьте свои данные, мы вам перезвоним</p>
+            <div class="form__container">
+              <label class="form__label">
+                Имя
+                <span class="form__inputwrapper">
+                  <input class="form__input" type="text" name="name" autofocus />
+                  <span class="form__iconwrapper">
+                    <svg class="form__icon" width="12" height="12">
+                      <use href="./images/icons.svg#person"></use>
+                    </svg>
+                  </span>
+                </span>
+              </label>
+            </div>
+            <div class="form__container">
+              <label class="form__label">
+                Телефон
+                <span class="form__inputwrapper">
+                  <input
+                    class="form__input"
+                    type="tel"
+                    name="phone-number"
+                    pattern="[\+]*[1-9]{2}\s?[\(]*[0-9]{3}[\)]*\s?\d{3}[-]*\d{2}[-]*\d{2}"
+                    title="+__(___)___-__-__"
+                  />
+                  <span class="form__iconwrapper">
+                    <svg class="form__icon" width="13" height="13">
+                      <use href="./images/icons.svg#phone"></use>
+                    </svg>
+                  </span>
+                </span>
+              </label>
+            </div>
+            <div class="form__container">
+              <label class="form__label">
+                Почта
+                <span class="form__inputwrapper">
+                  <input class="form__input" type="email" name="email" />
+                  <span class="form__iconwrapper">
+                    <svg class="form__icon" width="15" height="12">
+                      <use href="./images/icons.svg#email"></use>
+                    </svg>
+                  </span>
+                </span>
+              </label>
+            </div>
+            <div class="form__container form__container--comments">
+              <label class="form__label">
+                Комментарий
+                <textarea
+                  class="form__textarea"
+                  name="feedback"
+                  placeholder="Введите текст"
+                ></textarea>
+              </label>
+            </div>
+          </div>
+
+          <div class="form__group--checkbox" role="group" aria-labelledby="subcscribe-offer">
+            <p id="subcscribe-offer" class="form__text visually-hidden">Условия подписки</p>
+
+            <label class="form__label--checkbox">
+              <input
+                class="form__checkbox visually-hidden"
+                type="checkbox"
+                name="checked"
+                value="agreed"
+              />
+              <span class="form__wrapper--checkbox">
+                <svg class="form__check" width="11" height="8">
+                  <use href="./images/icons.svg#checkbox-checked"></use>
+                </svg> </span
+              ><span class="form__wrapper--text"
+                >Соглашаюсь с рассылкой и принимаю&nbsp;<a
+                  class="form__link link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Условия договора</a
+                ></span
+              >
+            </label>
+          </div>
+
+          <div class="form__container--submit">
+            <button type="submit" class="button button-base">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- END MODAL -->
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
